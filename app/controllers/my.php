@@ -34,9 +34,9 @@ class My extends ControllerBase{
             $message->addContent(Auth::getInfoUser($this,"-login"));
             echo $message;
             echo $this->jquery->compile($this->view);
-
+           
         }
 
     }
-   
+
 }

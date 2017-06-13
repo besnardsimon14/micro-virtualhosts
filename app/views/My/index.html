@@ -1,0 +1,73 @@
+<h2 class="ui header">
+  Mes services
+  <div class="sub header">Liste des machines et des machines virtuelles HTTP.</div>
+</h2>
+
+<div class="ui grid">
+  <div class="eight wide column">
+    <h3 class="ui header">
+      Mes Hosts
+      <div class="sub header">Serveurs d&eacute;di&eacute;s.</div><br>
+    </h3>
+    <div class="ui items">
+      {% for host in hosts %}
+      <div class="item">
+        <div class="tiny">
+          <img src="public/img/host.png">
+        </div>
+        <div class="content">
+          <a class="header">{{ host.Name() }}</a>
+          <div class="meta">
+            <span>{{ host.Ipv4() }}</span>
+          </div>
+          <div class="description">
+            <p></p>
+          </div>
+          <a href="Display/host/{{ host.id() }}">
+            <button class="ui icon button">
+              <i class="unhide icon"></i>
+              Virtualhost
+            </button></a>
+            {% endfor %}
+
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+    <h3 class="ui header">
+      Mes Virtualhosts
+      <div class="sub header">Hôtes virtuels sur serveurs mutualisés.</div>
+      <div class="ui items">
+        {% for virtualhost in virtualhosts %}
+        <div class="item">
+          <div class="ui middle aligned tiny image">
+            <img src="public/img/virtualhost.png">
+          </div>
+          <div class="content">
+            <b>{{ virtualhost.Server() }}</b>
+          </br>
+          <div class="ui header">
+            <b>{{ virtualhost.Name() }}</b>
+          </div>
+          <div class="description">
+            <div class="ui icon buttons">
+              <button class="ui button">
+                <i class="unhide icon"></i>
+              </button>
+              <button class="ui button">
+                <i class="configure icon"></i>
+                Configurer
+              </button>
+              <button class="ui button">
+                <i class="refresh icon"></i>
+                Recharger
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </h3>

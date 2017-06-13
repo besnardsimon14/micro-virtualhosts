@@ -1,0 +1,66 @@
+<h2 class="ui header">
+  <i class="server icon"></i>
+  {% for host in hosts %}
+  <div class="content">
+    {{ host.Name() }}
+    <div class="sub header">Liste des hôtes virtuels (virtualhosts) par serveur</div>
+  </div>
+  {% endfor %}
+</h2>
+{% for server in servers %}
+<div class="ui raised segment">
+  <div class="ui grid">
+    <div class="eight wide column">
+      <h3 class="ui header">
+
+        {{ server.name() }}
+      </h3>
+      <div class="ui fluid left icon input">
+        <input type="text" placeholder="Ajouter un virtualhost sur {{ server.name() }}...">
+        <i class="plus icon"></i>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  {% for virtualhost in virtualhosts %}
+  {% if server.name == virtualhost.server %}
+  <div class="ui header" style="display: inline">
+    <i class="database large icon"></i>
+    <div class="content">
+      {{ virtualhost.Name() }}
+      <div class="sub header">
+        <div class="ui icon buttons">
+          <button class="ui button">
+            <i class="unhide icon"></i>
+          </button>
+          <button class="ui button">
+            <i class="configure icon"></i>
+            Configurer
+          </button>
+          <button class="ui button">
+            <i class="refresh icon"></i>
+            Recharger
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  {% endif %}
+
+</br>
+
+{% endfor %}
+</div>
+{% endfor %}
+</br>
+
+
+<button class="ui icon black button">
+  <i class="undo icon"></i>
+  Retour a mes services
+</button></a>

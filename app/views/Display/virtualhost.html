@@ -1,0 +1,9 @@
+<h2 class="ui header">
+  <i class="server icon"></i>
+  {% for host in hosts %}
+  <div class="content">
+    {{ host.Name() }}
+    <div class="sub header">Liste des hôtes virtuels (virtualhosts) par serveur</div>
+  </div>
+  {% endfor %}
+</h2>

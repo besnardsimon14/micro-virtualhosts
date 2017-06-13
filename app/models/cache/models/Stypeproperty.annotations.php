@@ -1,0 +1,3 @@
+<?php
+
+return array("#tableName"=>"Stypeproperty","#primaryKeys"=>array("idStype","idProperty"),"#manyToOne"=>array("property","stype"),"#fieldNames"=>array("idStype"=>"idStype","idProperty"=>"idProperty","name"=>"name","template"=>"template","property"=>"idProperty","stype"=>"idStype"),"#nullable"=>"","#notSerializable"=>array("property","stype"),"#joinColumn"=>array("property"=>array("className"=>"models\Property","name"=>"idProperty","nullable"=>false),"stype"=>array("className"=>"models\Stype","name"=>"idStype","nullable"=>false)),"#invertedJoinColumn"=>array("idProperty"=>array("member"=>"property","className"=>"models\Property"),"idStype"=>array("member"=>"stype","className"=>"models\Stype")));

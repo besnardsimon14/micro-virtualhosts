@@ -1,0 +1,3 @@
+<?php
+
+return array("#tableName"=>"Server","#primaryKeys"=>array("id"),"#manyToOne"=>array("host","stype"),"#fieldNames"=>array("id"=>"id","name"=>"name","config"=>"config","configFile"=>"configFile","host"=>"idHost","virtualhosts"=>"virtualhosts","stype"=>"idStype"),"#nullable"=>"","#notSerializable"=>array("host","virtualhosts","stype"),"#oneToMany"=>array("virtualhosts"=>array("mappedBy"=>"server","className"=>"models\Virtualhost")),"#joinColumn"=>array("host"=>array("className"=>"models\Host","name"=>"idHost","nullable"=>false),"stype"=>array("className"=>"models\Stype","name"=>"idStype","nullable"=>false)),"#invertedJoinColumn"=>array("idHost"=>array("member"=>"host","className"=>"models\Host"),"idStype"=>array("member"=>"stype","className"=>"models\Stype")));

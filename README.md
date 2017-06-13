@@ -3,9 +3,12 @@ Small php project for web dynamic module
 
 # Howto
 
-- [x] Faire un [fork](https://github.com/jcheron/micro-virtualhosts/#fork-destination-box) du projet vers votre compte github.
-- [x] Cloner le projet sur votre machine locale, en le plaçant dans la racine de votre serveur web (www ou htdocs).
-- [x] Modifier au besoin la variable **siteUrl** du fichier **app/config.php**, et le **RewriteBase** du fichier **.htaccess**
-- [x] Lire les spécifications du projet : [Micro-virtualhosts specifications](http://slamwi.kobject.net/php-rt/projets/projet-2017).
-- [x] Faire des commits et pushs réguliers 
+- [x] Installer [XAMPP](https://www.apachefriends.org/fr/index.html). (serveur Web et SQL)
+- [x] Copier le projet dans le dossier htdocs se situant a la racine du dossier de XAMPP.
+- [x] Créer la base de donnée : aller sur [phpmyadmin](http://127.0.0.1/phpmyadmin/server_import.php?db=)puis importer le fichier /app/database/virtualhosts.sql .
+- [x] Se rendre a l'adresse du [projet](http://127.0.0.1/micro-virtualhosts/)
+
+[Visualiser le TODO 1](http://127.0.0.1/micro-virtualhosts/my)
+[Visualiser le TODO 2](http://127.0.0.1/micro-virtualhosts/display/host/1)
+
 

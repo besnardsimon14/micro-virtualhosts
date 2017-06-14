@@ -8,8 +8,7 @@ Small php project for web dynamic module
 - [x] Créer la base de donnée : aller sur [phpmyadmin](http://127.0.0.1/phpmyadmin/server_import.php?db=) puis importer le fichier /app/database/virtualhosts.sql .
 - [x] Se rendre a l'adresse du [projet](http://127.0.0.1/micro-virtualhosts/)
 
-
-
+Les TODO 1, 2 et 4 ont été réalisé sur ce projet.
 
 # Fonctionnalités
 

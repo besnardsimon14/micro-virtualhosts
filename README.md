@@ -10,8 +10,13 @@ Small php project for web dynamic module
 
 
 Les TODO 1, 2 et 4 ont été réalisé sur ce projet.
+
+Fonctionnalités :
+    - Accès aux TODO 1 et 2 sécurisé : si l'utilisateur n'est pas connecté, n'affiche pas la page et invite a se connecter.
+    
 Nous avons utilisé Twig et Semantic-UI pour l'affichage.
 [Visualiser le TODO 1](http://127.0.0.1/micro-virtualhosts/my)
 [Visualiser le TODO 2](http://127.0.0.1/micro-virtualhosts/display/host/1)
+
 
 

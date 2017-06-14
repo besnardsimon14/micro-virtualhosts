@@ -17,7 +17,17 @@ Les TODO 1, 2 et 4 ont été réalisé sur ce projet.
     - Affichage en fonction du type de serveur (Apache, Nginx..)
     - 
 Nous avons utilisé Twig et Semantic-UI pour l'affichage.
+
+
+# Répartition des TODO : 
+
+TODO 1 : fait par Simon Besnard et aidé par Edouard Ducrocq
+
 [Visualiser le TODO 1](http://127.0.0.1/micro-virtualhosts/my)
+
+
+TODO 2 et 4 : fait par Edouard Ducrocq
+
 [Visualiser le TODO 2](http://127.0.0.1/micro-virtualhosts/display/host/1)
 
 

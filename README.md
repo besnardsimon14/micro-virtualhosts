@@ -15,7 +15,7 @@ Les TODO 1, 2 et 4 ont été réalisé sur ce projet.
     - Accès aux TODO 1 et 2 sécurisé : si l'utilisateur n'est pas connecté, n'affiche pas la page et invite a se connecter.
     - Possibilité de voir le serveurs dédié et les hotes virtuels de l'utilisateur connecté 
     - Affichage en fonction du type de serveur (Apache, Nginx..)
-    - 
+   
 Nous avons utilisé Twig et Semantic-UI pour l'affichage.
 
 
